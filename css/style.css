@@ -15,3 +15,74 @@ header {
     height: 1000px;
 }
 
+.logo{
+    vertical-align: middle;
+    height: 100px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 85px;
+}
+
+.projects-link{
+    text-decoration: none;
+}
+
+.projects-item{
+    text-align: center;
+    margin: 20px;
+    box-sizing: border-box;
+    width: 545px;
+    float: left;
+    border: 3px solid lightgoldenrodyellow;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.projects-img{
+    width: 479px;
+    height: 243px;
+    padding-bottom: 20px;
+}
+
+.brandly{
+    display: block;
+    opacity: 0.8;
+    color: rgb(220, 0, 0);
+    font-weight: 400;
+}
+
+.brandly-big{
+    font-size: 48px;
+    font-family: 'Conv_BebasNeue_Regular', sans-serif;
+}
+
+.brandly-small{
+    font-size: 36px;
+    font-family: 'Conv_BebasNeue_Book', sans-serif;
+}
+
+.mogo{
+    color: plum;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 49px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
