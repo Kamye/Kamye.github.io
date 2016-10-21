@@ -14,7 +14,7 @@ font-family: 'Roboto', sans-serif;
     margin: 0 auto;
 }
 
-.clearfix{
+.clearfix:after{
     content: '';
     clear: both;
     display: table;
@@ -181,7 +181,7 @@ header{
 }
 
 h2{
-    margin-top: 95px;
+    padding-top: 95px;
     color: rgb(51, 51, 51);
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
@@ -240,14 +240,19 @@ h1:after{
     background-color: rgb(149, 225, 211);
 }
 
+.statistics-list{
+
+}
+
 .statistics-list:last-child{
     border-right: 1px solid rgba(256, 256, 256, 0.3);
 }
 
 .statistics-item{
+    box-sizing: border-box;
+    float: left;
     text-align: center;
-    vertical-align: middle;
-    width: 240px;
+    width: 239px;
     height: 270px;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -258,12 +263,13 @@ h1:after{
 }
 
 .statistics-item-numder{
+    width: 100%;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 72px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-top: 89px;
 }
 
 /*----END-Statistics-Style----*/
@@ -275,18 +281,96 @@ h1:after{
 }
 
 .services-table{
-    margin-top: 110px;
+    padding: 50px 0;
+}
+
+.services-table-line{
+    width: 100%;
+    margin: 50px 0;
 }
 
 .services-table-cell{
+    float: left;
+    width: 335px;
+    height: 70px;
+    margin: 0 31px;
+}
+
+.services-table-cell-img{
+    float: left;
+    width: 32px;
+    height: 70px;
+}
+
+.services-table-cell-content{
     text-align: left;
-    vertical-align: top;
-
-    height: 75px;
+    width: 275px;
+    float: left;
+    margin-left: 28px;
 }
 
-.services-table-text{
-    width: 340px;
+.services-table-cell-name{
+    color: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 15px;
 }
+
+.services-table-cell-text{
+    color: rgb(153, 153, 153);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #E5E5E5;
+}
+
+/*----END-Services-Style----*/
+
+/*----Design-Style----*/
+
+.design{
+    position: relative;
+    height: 850px;
+    text-align: center;
+    background: url("../images/design-bg.png") no-repeat top center;
+}
+
+.design-contant{
+    position: absolute;
+    left: 628px;
+    bottom: -55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
