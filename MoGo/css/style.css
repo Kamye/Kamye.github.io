@@ -465,7 +465,7 @@ h1:after{
     margin-left: 60px;
 }
 
-.quote-author:before{
+.quote-author:before {
     content: '';
     display: inline-block;
     position: absolute;
@@ -475,3 +475,98 @@ h1:after{
     left: -60px;
     bottom: 7px;
 }
+
+/*----END-Quote-Style----*/
+
+/*----Team-Style----*/
+
+.team{
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+.team-list{
+    padding-top: 85px;
+}
+
+.team-item{
+    float: left;
+    margin-right: 30px;
+}
+
+.last-item{
+    margin-right: 0;
+}
+
+.team-img{
+    margin-bottom: 25px;
+}
+
+.team-name{
+    color: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.team-position{
+    color: rgb(153, 153, 153);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/*----END-Team-Style----*/
+
+/*----Logos-Style----*/
+
+.logos{
+    background-color: rgb(248, 248, 248);
+    padding: 60px 0;
+}
+
+/*----END-Logos-Style----*/
+
+/*----Work-Style----*/
+
+.work{
+    text-align: center;
+}
+
+.work-list{
+    width: 1920px;
+    padding: 100px 0;
+}
+
+.work-item{
+    float: left;
+    width: 480px;
+}
+
+.work-item:hover{
+    background-color: rgb(149, 225, 211);
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.81) 0%, rgba(243, 129, 129, 0.81) 100%);
+}
+
+.work-item-img{
+    box-sizing: border-box;
+}
+
+.quote-work{
+    background: none;
+    padding-top: 0;
+}
+
+.quote-work-img{
+    border: none;
+    margin-right: 0;
+}
+
+.quote-work-text{
+    margin-top: 60px;
+}
+
+/*----END-Work-Style----*/
