@@ -546,10 +546,10 @@ h1:after{
     width: 480px;
 }
 
-.work-item:hover{
+/*.work-item:hover{
     background-color: rgb(149, 225, 211);
     background-image: linear-gradient(to top, rgba(252, 227, 138, 0.81) 0%, rgba(243, 129, 129, 0.81) 100%);
-}
+}*/
 
 .work-item-img{
     box-sizing: border-box;
@@ -570,3 +570,452 @@ h1:after{
 }
 
 /*----END-Work-Style----*/
+
+/*----People-Style----*/
+
+.people{
+    text-align: center;
+    background: url("../images/people-bg.png");
+}
+
+.people-list{
+    margin-top: 120px;
+}
+
+.people-line{
+
+}
+
+.people-item{
+    float: left;
+    text-align: left;
+    margin: 0 45px 0 40px;
+}
+
+.people-foto{
+    width: 110px;
+    float: left;
+    margin-right:30px;
+}
+
+.people-contant{
+    float: left;
+}
+
+.people-name{
+    color: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.people-position{
+    color: rgb(51, 51, 51);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    position: relative;
+}
+
+.people-position:after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: rgb(243, 129, 129);
+    left: 0;
+    bottom: -20px;
+}
+
+.people-text{
+    width: 375px;
+    margin-top: 45px;
+    color: rgb(153, 153, 153);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 70px;
+}
+
+/*----END-People-Style----*/
+
+/*----Blog-Style----*/
+
+.blog{
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+.blog-list{
+    margin-top: 90px;
+}
+
+.blog-item{
+    margin-right: 30px;
+    text-align: left;
+    width: 380px;
+    float: left;
+}
+
+.last-item{
+    margin-right: 0;
+}
+
+.blog-img{
+    position: relative;
+}
+
+.blog-foto{
+
+}
+
+.blog-date{
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+    color: white;
+    background-color: rgb(149, 225, 211);
+    padding: 15px;
+}
+
+.blog-date-numb{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.blog-date-month{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.blog-name{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.blog-text{
+    color: rgb(153, 153, 153);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.blog-stat{
+    margin-top: 20px;
+}
+
+.blog-stat-item{
+    float: left;
+    margin-right: 20px;
+}
+
+.blog-stat-item img{
+    display: block;
+    float: left;
+}
+
+.blog-stat-item p{
+    display: block;
+    float: left;
+    margin-left: 5px;
+    color: rgb(153, 153, 153);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+/*----END-Blog-Style----*/
+
+/*----Map-Style----*/
+
+.map{
+    text-align: center;
+    background: url("../images/map-bg.png");
+}
+
+.map-contant{
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.map-text{
+    position: relative;
+    color: rgb(243, 129, 129);
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 18px;
+}
+
+.map-text:after{
+    width: 60px;
+    height: 3px;
+    background-color: rgb(243, 129, 129);
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: -22px;
+    left: calc(50% - 30px);
+}
+
+/*----END-Map-Style----*/
+
+/*-----Footer-Style----*/
+
+footer{
+    background-color: rgb(248, 248, 248);
+
+}
+
+.footer-list{
+
+}
+
+.footer-item{
+    float: left;
+    margin-right: 39px;
+}
+
+/*-------MoGo-Style-------*/
+
+.mogo{
+    width: 465px;
+    margin-top: 75px;
+
+}
+
+.mogo-header{
+    color: rgb(204, 204, 204);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.mogo-text{
+    margin-top: 25px;
+    color: rgb(153, 153, 153);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.mogo-followers{
+    color: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.mogo-followers-num{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.mogo-follows{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.follow-us{
+    float: left;
+    color: rgb(153, 153, 153);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    width: 70px;
+}
+
+.mogo-follow-link{
+    float: left;
+    margin-left: 15px;
+}
+
+.mogo-follow-i{
+
+}
+
+.subscribe{
+    position: relative;
+    margin-bottom: 70px;
+
+}
+
+.subscribe-form{
+
+}
+
+.subscribe-input{
+    background-color: white;
+    border: 1px solid rgb(231, 231, 231);
+    box-sizing: border-box;
+    height: 40px;
+    width: 230px;
+    outline: none;
+    color: rgb(204, 204, 204);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    padding: 0 14px;
+}
+
+/*
+.subscribe-input:-moz-placeholder{
+    color: #ffffff;
+}
+
+.subscribe-input::-moz-placeholder{
+    color: #ffffff;
+}
+
+.subscribe-input::-webkit-input-placeholder{
+    color: #ffffff;
+}
+*/
+
+.subscribe-btn{
+    position: absolute;
+    left: 229px;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(149, 225, 211);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/*-------END-MoGo-Style-------*/
+
+/*-------Blogs-Style-------*/
+
+.blogs{
+
+
+}
+
+.blogs-item{
+    margin-bottom: 30px;
+}
+
+.footer-item-name{
+    color: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.blogs-img-link{
+    float: left;
+}
+
+.blogs-img{
+
+}
+
+.blogs-contant{
+    margin-top: 20px;
+    width: 205px;
+    float: left;
+    margin-left: 20px;
+}
+
+.blogs-link-text{
+    color: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.blogs-link-text:hover{
+    text-decoration: underline;
+}
+
+.blogs-date{
+    margin-top: 5px;
+    color: rgb(153, 153, 153);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/*-------END-Blogs-Style-------*/
+
+/*-------Instagram-Style-------*/
+
+.last-item{
+    margin-right: 0;
+}
+
+.instagram-list{
+    margin-bottom: 20px;
+}
+
+.instagram-link{
+    text-decoration: none;
+}
+
+.instagram-link-after{
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.instagram-link-after:hover{
+    text-decoration: underline;
+}
+
+/*-------END-Instagram-Style-------*/
+
+.footer-text{
+    margin: 25px 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+}
+
+.footer-text-name{
+    color: rgb(243, 129, 129);
+}
+
+/*-----END-Footer-Style----*/
