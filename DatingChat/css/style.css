@@ -24,7 +24,8 @@ body{
 /*----Header-Style----*/
 
 header{
-    background: url("../images/header-bg.png") no-repeat top center;
+    background: url("../images/hand-header.png") no-repeat bottom center;
+    background-color: red;
     padding-bottom: 232px;
 }
 
@@ -138,6 +139,7 @@ header{
 /*----About-Style----*/
 
 .about{
+    background: url("../images/QR.png") no-repeat center -218px;
     text-align: center;
     padding-bottom: 150px;
 }
@@ -174,6 +176,13 @@ header{
     margin-top: 70px;
 }
 
+.tabs__content {
+    display: none; /* по умолчанию прячем все блоки */
+}
+.tabs__content.active {
+    display: block; /* по умолчанию показываем нужный блок */
+}
+
 .about-left-list{
     float: left;
     width: 50%;
@@ -186,6 +195,7 @@ header{
     width: 280px;
     margin-top: 33px;
     margin-bottom: 29px;
+    cursor: pointer;
 
 }
 
@@ -222,6 +232,10 @@ header{
     margin-left: 46px;
     margin-right: 60px;
     margin-top: 40px;
+}
+
+.about-right-content .active{
+    background-color: lightyellow;
 }
 
 .about-right-name{

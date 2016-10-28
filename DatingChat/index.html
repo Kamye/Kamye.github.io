@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/font.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
     <header>
@@ -47,43 +49,77 @@
 
     <div class="about">
         <div class="container">
-            <img src="images/logo.png" alt="" class="logo">
+            <!--<img src="images/logo.png" alt="" class="logo">-->
             <div class="content-header">
                 <img  class="content-header-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAyCAMAAAA3KEgwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACrFBMVEUAhP3///8AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP3///+UZRpBAAAA4nRSTlMAABxost3kwH4pJ4uoQUCvmUwdFjqD8MxQwvSIEgdu2+FsDR5m7M0JTbx6Kk+4jSUVcOnVZVjFe2LW4HITBnjnx1wCRbEaIIf8vjyjpTg2nTS9SBEU7chVBaucJro/LJ4M2JFWoNBtF3f7/jWbvw7aI4qmfxhEdaFrqi5Sgur6y5jl+HkIO2qUxrRTBLthQuuiGYYoR5DE3wt0V6Q9TpewL7UxX8Hj0SFgW1ki2TeSWgpp3APxhB/JMmfUPmMk5l35S97yw9dUKwFzEBv1Xn2WkzD9rqfTjrOf9oGtcS22fOhJ2nxmVQAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxIAAAsSAdLdfvwAAAQKSURBVEjHnZb9Q1NVGMefu0KQycIEREFQ5hgICgw1cAwF3xJTAckETEwZ4MAgoMipKFQyAbGiVCqyMiVQhDC1zBQ10rBSMu096/uXdO7dxsbdvWPs+WHnnGfPZ+c5z8s5I5IVxWOP+0zy9Zs8Vss5iSzqr4RNpgRMEFY9wajAqU9OCwoOAaaHTgAOnQHMDAu3LmZFRAKz50R5BKvnaoDouVonVUws82Ne3Lhw/HxmtyBBrE5M0gHJC93CixYDIU9pSUpSUoEl+jQZ2JC+FFiWkSmbgOUrmFfKlRLwqtVPA2tCya1krWX4M+vGwpnree2GbBpX1GEsnDm5G0fhvOBngU3PbR4fFQKWlc82KigUYMNqNt/yvEekLdpbi3jvEzja9gKwfauk3Y7iaGN+idYV5rjSsp0wlVMFdqml94i1lrZPmgTMcS8uQCXBJAVuq8p+CdXlieFxNVgjCXNcKlzh2pdfqTMKexYpiKJexXQZ2AjajXx7zc8y79k7f5/A1e8/UGL9BWhWScNlaKBEHRpfS3z9jYNNFqvxvkM1zeYWZmYoadVoLGGlUgHbfHg20MayvAEwHRE445t61VsepKr27Z2sUtYJRdJewZPV73iW58zyd5n1iqDR8mzFUeCYvnZ89ngHK8/k9wxOtb0YeQnFzPv3P3CPJihZPGM7xzaGBWaWow+ZOyfcOP9RIDP42CxuSQs+4Qc0sIY/dlIajfkUOHUaKk4a7sIy+mwTcEQ/WUyqu6OBSD9KR48MfAZn2ec0P+bcjHhntPcEU50rZLPt6JOFdcKq/3PWaQNJ523oIubvFxes3VPkBsZFG9B8iXlf82W/1v+ry0DDwRab/pQsXAUUj7r6dbX9udm1Y1R5BeiWgb9hlllOmblw6arOGKhyaLqYwTUZOByDjSiTz/N1dgB0ysB0o77nJr6Nk0Y3NgGdQ6h1gX3hzw8RaCKW53NSuAIYrPoOOa4vhhG3+OG2DutpDrv8h75vP+8EDqfsvn5nsI4MwBkxPMwet0oFP7v1A34k+uksH+ShgmD9yWtJe+82kwm4x74d+RlXXB66eWhKwQ1rPOuxpJfPc3GqPVO4T+kReUSFrUCA6yt5AESRuC3QK5kXW5YL04u9bXv6Ytqsz+1IHbuEg8gV7kbOXdMv9gM2P2DVWBB/x3HkUtVDdmNpOoSFGG7nnZvqMM7wFdzd/+vah8rf7lt+5xeV6bYKFcN/oKJjpk+LgybFwj8v37SfuXGg9S9Hj4rhAXbmamuZOEv/sPrvka6042O1YngwhOgecskjEcGZOE2kRIZXcDj+IXoEvVdwOwL5TlV6BQfwbZiLKV7BfeghMuOoV/AjZBNp8a9XcASuPkj1wSSv4Cj+7yaS/5s4/D/hDOy3ymbkOQAAAABJRU5ErkJggg==" alt="">
                 <p class="content-header-name">About Our Bot</p>
             </div>
             <div class="about-content clearfix">
-                <div class="about-left-list">
-                    <div class="about-left-item">
-                        <h4 class="about-left-item-name">Lorem ipsum dolor sit </h4>
-                        <p class="about-left-item-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        </p>
-                    </div>
-                    <div class="about-left-item about-left-item_active">
-                        <h4 class="about-left-item-name">Lorem ipsum dolor sit </h4>
-                        <p class="about-left-item-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        </p>
-                    </div>
-                    <div class="about-left-item">
-                        <h4 class="about-left-item-name">Lorem ipsum dolor sit </h4>
-                        <p class="about-left-item-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        </p>
-                    </div>
-                </div>
-                <div class="about-right">
-                    <div class="about-right-content">
-                        <p class="about-right-name">Lorem ipsum dolor sit amet</p>
-                        <p class="about-right-text">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                            <br>
-                            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
-                        </p>
+
+
+                <div class="tabs">
+
+                    <ul class="tabs__caption about-left-list">
+                        <li>
+                            <div class="about-left-item">
+                                <h4 class="about-left-item-name">Lorem ipsum dolor sit </h4>
+                                <p class="about-left-item-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                </p>
+                            </div>
+                        </li>
+                        <li class="active">
+                            <div class="about-left-item about-left-item_active">
+                                <h4 class="about-left-item-name">Lorem ipsum dolor sit </h4>
+                                <p class="about-left-item-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="about-left-item">
+                                <h4 class="about-left-item-name">Lorem ipsum dolor sit </h4>
+                                <p class="about-left-item-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <div class="about-right">
+                        <div class="about-right-content">
+                            <div class="tabs__content">
+                                <p class="about-right-name">Lorem ipsum dolor sit amet</p>
+                                <p class="about-right-text">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                    <br>
+                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+                                </p>
+                            </div>
+                            <div class="tabs__content active">
+                                <p class="about-right-name">Lorem ipsum dolor sit amet</p>
+                                <p class="about-right-text">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                    <br>
+                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+                                </p>
+                            </div>
+                            <div class="tabs__content">
+                                <p class="about-right-name">Lorem ipsum dolor sit amet</p>
+                                <p class="about-right-text">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                    <br>
+                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
+
+               <!--
+                   -->
             </div>
         </div>
     </div>
