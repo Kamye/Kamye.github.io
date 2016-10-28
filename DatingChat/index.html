@@ -12,8 +12,8 @@
     <script src="js/scripts.js"></script>
 </head>
 <body>
+    <div class="animate-faces"></div>
     <header>
-        <div class="animate-faces"></div>
         <div class="container">
             <div class="header-top clearfix">
                 <div class="header-logo">
@@ -60,24 +60,24 @@
                 <div class="tabs">
 
                     <ul class="tabs__caption about-left-list">
-                        <li>
-                            <div class="about-left-item">
+                        <li class="about-left-item">
+                            <div>
                                 <h4 class="about-left-item-name">Lorem ipsum dolor sit </h4>
                                 <p class="about-left-item-text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                                 </p>
                             </div>
                         </li>
-                        <li class="active">
-                            <div class="about-left-item about-left-item_active">
+                        <li class="about-left-item active">
+                            <div>
                                 <h4 class="about-left-item-name">Lorem ipsum dolor sit </h4>
                                 <p class="about-left-item-text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                                 </p>
                             </div>
                         </li>
-                        <li>
-                            <div class="about-left-item">
+                        <li class="about-left-item">
+                            <div>
                                 <h4 class="about-left-item-name">Lorem ipsum dolor sit </h4>
                                 <p class="about-left-item-text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -91,11 +91,12 @@
                         <div class="about-right-content">
                             <div class="tabs__content">
                                 <p class="about-right-name">Lorem ipsum dolor sit amet</p>
-                                <p class="about-right-text">
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                    <br>
+                                <div class="about-right-text">
+                                    <div class="about-right-text-top">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                    </div>
                                     Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
-                                </p>
+                                </div>
                             </div>
                             <div class="tabs__content active">
                                 <p class="about-right-name">Lorem ipsum dolor sit amet</p>
@@ -125,26 +126,26 @@
     </div>
 
     <div class="culc">
-        <!--<div class="container">
-            <ul class="culc-list">
-                <li class="culc-item">
-                    <span class="count">13856+</span>
-                    <span class="culc-text">Lorem ipsum dolor sit amet</span>
-                </li>
-                <li class="culc-item">
-                    <span class="count">336+</span>
-                    <span class="culc-text">Lorem ipsum dolor sit amet</span>
-                </li>
-                <li class="culc-item">
-                    <span class="count">1875+</span>
-                    <span class="culc-text">Lorem ipsum dolor sit amet</span>
-                </li>
-                <li class="culc-item">
-                    <span class="count">875+</span>
-                    <span class="culc-text">Lorem ipsum dolor sit amet</span>
-                </li>
-            </ul>
-        </div>-->
+        <div class="container">
+            <div class="culc-list clearfix">
+                <div class="culc-item">
+                    <p class="count">13856</p>
+                    <p class="culc-text">Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="culc-item">
+                    <p class="count">336</p>
+                    <p class="culc-text">Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="culc-item">
+                    <p class="count">1875</p>
+                    <p class="culc-text">Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="culc-item">
+                    <p class="count">875</p>
+                    <p class="culc-text">Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="works">
@@ -156,7 +157,7 @@
 
             <div class="works-content clearfix">
                 <div class="works-content-right clearfix">
-                    <img src="images/works-image-1.png" alt="" class="works-content-right-img">
+                    <img src="images/works-img-1.png" alt="" class="works-content-right-img">
                     <div class="works-content-right-text">
                         <div class="works-content-num">01</div>
                         <div class="works-content-name">Lorem ipsum dolor sit amet</div>
@@ -164,15 +165,44 @@
                     </div>
                 </div>
                 <div class="works-content-left clearfix">
-                    <img src="images/works-image-1.png" alt="" class="works-content-left-img">
+                    <img src="images/works-img-1.png" alt="" class="works-content-left-img">
                     <div class="works-content-left-text">
                         <div class="works-content-num">02</div>
                         <div class="works-content-name">Lorem ipsum dolor sit amet</div>
-                        <div class="works-content-text">Начальный контакт с ботом</div>
+                        <div class="works-content-text">У пользователя спрашивает возраст и в след. сообщении фото</div>
+                    </div>
+                </div>
+                <div class="works-content-right clearfix">
+                    <img src="images/works-img-1.png" alt="" class="works-content-right-img">
+                    <div class="works-content-right-text">
+                        <div class="works-content-num">03</div>
+                        <div class="works-content-name">Lorem ipsum dolor sit amet</div>
+                        <div class="works-content-text">Фото сохраняется и запрашивается местоположении или город.
+                            Поиск людей будет производиться в каком-то радиусе от указанного места </div>
+                    </div>
+                </div>
+                <div class="works-content-left clearfix">
+                    <img src="images/works-img-1.png" alt="" class="works-content-left-img">
+                    <div class="works-content-left-text">
+                        <div class="works-content-num">04</div>
+                        <div class="works-content-name">Lorem ipsum dolor sit amet</div>
+                        <div class="works-content-text">Дальше будут доступны фото других пользователей, которые можно будет лайкнуть или пропустить</div>
+                    </div>
+                </div>
+                <div class="works-content-right clearfix">
+                    <img src="images/works-img-1.png" alt="" class="works-content-right-img">
+                    <div class="works-content-right-text">
+                        <div class="works-content-num">05</div>
+                        <div class="works-content-name">Lorem ipsum dolor sit amet</div>
+                        <div class="works-content-text">Если пользователи друг друга лайкнули то прямо в чате с ботом открывается прямой чат между этими двумя пользователям</div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="testimonials">
+        
     </div>
 </body>
 </html>

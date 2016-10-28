@@ -11,6 +11,8 @@ body{
 }
 
 .container{
+    z-index: 2;
+    position: relative;
     width: 1140px;
     margin: 0 auto;
 }
@@ -25,8 +27,43 @@ body{
 
 header{
     background: url("../images/hand-header.png") no-repeat bottom center;
-    background-color: red;
     padding-bottom: 232px;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+@-webkit-keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+@-ms-keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+@-moz-keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+
+.animate-faces	{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 754px;
+    background-image: url("../images/faces.png");
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+
+    animation: animatedBackground 40s linear infinite;
+    -ms-animation: animatedBackground 40s linear infinite;
+    -moz-animation: animatedBackground 40s linear infinite;
+    -webkit-animation: animatedBackground 40s linear infinite;
 }
 
 .header-top{
@@ -138,10 +175,23 @@ header{
 
 /*----About-Style----*/
 
+.about:before{
+    content: '';
+    background-image: url(../images/Layer-2.png);
+    background-position: center -219px;
+    position: absolute;
+    width: 100%;
+    height: 219px;
+    display: block;
+    top: -219px;
+}
+
 .about{
-    background: url("../images/QR.png") no-repeat center -218px;
+    background-color: rgb(247, 247, 247);
     text-align: center;
     padding-bottom: 150px;
+    position: relative;
+    z-index: 3;
 }
 
 .logo{
@@ -177,10 +227,10 @@ header{
 }
 
 .tabs__content {
-    display: none; /* по умолчанию прячем все блоки */
+    display: none; /* Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ Ð¿Ñ€ÑÑ‡ÐµÐ¼ Ð²ÑÐµ Ð±Ð»Ð¾ÐºÐ¸ */
 }
 .tabs__content.active {
-    display: block; /* по умолчанию показываем нужный блок */
+    display: block; /* Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ Ð¿Ð¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÐ¼ Ð½ÑƒÐ¶Ð½Ñ‹Ð¹ Ð±Ð»Ð¾Ðº */
 }
 
 .about-left-list{
@@ -193,13 +243,11 @@ header{
     margin-left: 230px;
     text-align: left;
     width: 280px;
-    margin-top: 33px;
-    margin-bottom: 29px;
+    padding-top: 33px;
+    padding-bottom: 29px;
     cursor: pointer;
 
 }
-
-.about-left-item_active{}
 
 .about-left-item-content{
     margin-left: 230px;
@@ -235,7 +283,6 @@ header{
 }
 
 .about-right-content .active{
-    background-color: lightyellow;
 }
 
 .about-right-name{
@@ -255,28 +302,67 @@ header{
     line-height: 24px;
 }
 
+.about-right-text-top{
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
 /*----About-Style----*/
 
 /*----Culc-Style----*/
 
 .culc{
-    background: url("../images/culc-bg.png");
-    height: 230px;
+    text-align: center;
+    background: url(../images/culc-bg.png) center -12px;
+    box-shadow: 0 13px 30px rgba(33, 33, 33, 0.26);
 }
+
+.culc-list{
+    width: 885px;
+    margin: 0 auto;
+}
+
+.culc-item{
+    float: left;
+    margin-top: 66px;
+    margin-bottom: 50px;
+    width: 25%;
+}
+
+.count{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.culc-text{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 110px;
+    margin: 0 auto;
+}
+
+
 
 /*----Works-Style----*/
 
 .works{
     text-align: center;
+    padding-bottom: 240px;
 }
 
 .works-content{
+    width: 945px;
+    margin: 0 auto;
     margin-top: 170px;
-
 }
 
 .works-content-right{
-    margin-right: 98px;
     float: right;
     text-align: right;
 }
@@ -284,9 +370,15 @@ header{
 .works-content-right-text{
     float: right;
     margin-top: 85px;
+    width: 490px;
+}
+
+.works-content-right-text .works-content-name{
+    margin-left: 235px;
 }
 
 .works-content-right-img{
+    box-shadow: 0 13px 30px rgba(68, 68, 68, 0.25);
     float: right;
     margin-left: 230px;
 }
@@ -307,12 +399,14 @@ header{
     font-weight: 400;
     text-transform: uppercase;
     line-height: 1.2;
+
 }
 
 .works-content-text{
     color: rgb(117, 117, 117);
     font-size: 16px;
     font-weight: 400;
+    line-height: 30px;
 }
 
 .works-content-left{
@@ -320,30 +414,19 @@ header{
     margin-bottom: 110px;
     text-align: left;
     float: left;
-    margin-left: 98px;
 }
 
 .works-content-left-img{
+    box-shadow: 0 13px 30px rgba(68, 68, 68, 0.25);
     float: left;
     margin-right: 210px;
-    
+
 }
 
 .works-content-left-text{
+    width: 350px;
     float: left;
+    margin-top: 60px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*----END-Works-Style----*/
