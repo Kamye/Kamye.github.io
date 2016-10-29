@@ -26,27 +26,27 @@ body{
 /*----Header-Style----*/
 
 header{
-    background: url("../images/hand-header.png") no-repeat bottom center;
-    padding-bottom: 232px;
+    background: url("../images/hand-header.png") no-repeat center calc(100% - 101px);
+    padding-bottom: 267px;
     position: relative;
     z-index: 2;
 }
 
 @keyframes animatedBackground {
     from { background-position: 0 0; }
-    to { background-position: 100% 0; }
+    to { background-position: 1920px 0; }
 }
 @-webkit-keyframes animatedBackground {
     from { background-position: 0 0; }
-    to { background-position: 100% 0; }
+    to { background-position: 1920px 0; }
 }
 @-ms-keyframes animatedBackground {
     from { background-position: 0 0; }
-    to { background-position: 100% 0; }
+    to { background-position: 1920px 0; }
 }
 @-moz-keyframes animatedBackground {
     from { background-position: 0 0; }
-    to { background-position: 100% 0; }
+    to { background-position: 1920px 0; }
 }
 
 .animate-faces	{
@@ -60,10 +60,10 @@ header{
     background-position: 0px 0px;
     background-repeat: repeat-x;
 
-    animation: animatedBackground 40s linear infinite;
-    -ms-animation: animatedBackground 40s linear infinite;
-    -moz-animation: animatedBackground 40s linear infinite;
-    -webkit-animation: animatedBackground 40s linear infinite;
+    animation: animatedBackground 50s linear infinite;
+    -ms-animation: animatedBackground 50s linear infinite;
+    -moz-animation: animatedBackground 50s linear infinite;
+    -webkit-animation: animatedBackground 50s linear infinite;
 }
 
 .header-top{
@@ -116,7 +116,7 @@ header{
 }
 
 .header-content{
-    margin-top: 120px;
+    margin-top: 107px;
     text-align: center;
 }
 
@@ -148,7 +148,7 @@ header{
 
 .header-content-cta{
     display: inline-block;
-    margin-top: 43px;
+    margin-top: 50px;
     background-color: white;
     border-radius: 5px;
 }
