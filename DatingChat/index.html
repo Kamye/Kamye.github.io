@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <title>DatingChat</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,400,700" rel="stylesheet">
     <script src="js/jquery.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
     <script src="js/scripts.js"></script>
 </head>
 <body>
@@ -24,7 +27,7 @@
                     </a>
                 </div>
                 <div class="header-nav">
-                    <ul class="header-nav-list">
+                    <ul id="menu" class="header-nav-list">
                         <li class="header-nav-item"><a class="active" href="#">home</a></li>
                         <li class="header-nav-item"><a href="#">about</a></li>
                         <li class="header-nav-item"><a href="#">how it works</a></li>
@@ -50,8 +53,8 @@
     </header>
 
     <div class="about">
+        <h2>About Our Bot</h2>
         <div class="container">
-            <!--<img src="images/logo.png" alt="" class="logo">-->
             <div class="content-header">
                 <img  class="content-header-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAyCAMAAAA3KEgwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACrFBMVEUAhP3///8AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP3///+UZRpBAAAA4nRSTlMAABxost3kwH4pJ4uoQUCvmUwdFjqD8MxQwvSIEgdu2+FsDR5m7M0JTbx6Kk+4jSUVcOnVZVjFe2LW4HITBnjnx1wCRbEaIIf8vjyjpTg2nTS9SBEU7chVBaucJro/LJ4M2JFWoNBtF3f7/jWbvw7aI4qmfxhEdaFrqi5Sgur6y5jl+HkIO2qUxrRTBLthQuuiGYYoR5DE3wt0V6Q9TpewL7UxX8Hj0SFgW1ki2TeSWgpp3APxhB/JMmfUPmMk5l35S97yw9dUKwFzEBv1Xn2WkzD9rqfTjrOf9oGtcS22fOhJ2nxmVQAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxIAAAsSAdLdfvwAAAQKSURBVEjHnZb9Q1NVGMefu0KQycIEREFQ5hgICgw1cAwF3xJTAckETEwZ4MAgoMipKFQyAbGiVCqyMiVQhDC1zBQ10rBSMu096/uXdO7dxsbdvWPs+WHnnGfPZ+c5z8s5I5IVxWOP+0zy9Zs8Vss5iSzqr4RNpgRMEFY9wajAqU9OCwoOAaaHTgAOnQHMDAu3LmZFRAKz50R5BKvnaoDouVonVUws82Ne3Lhw/HxmtyBBrE5M0gHJC93CixYDIU9pSUpSUoEl+jQZ2JC+FFiWkSmbgOUrmFfKlRLwqtVPA2tCya1krWX4M+vGwpnree2GbBpX1GEsnDm5G0fhvOBngU3PbR4fFQKWlc82KigUYMNqNt/yvEekLdpbi3jvEzja9gKwfauk3Y7iaGN+idYV5rjSsp0wlVMFdqml94i1lrZPmgTMcS8uQCXBJAVuq8p+CdXlieFxNVgjCXNcKlzh2pdfqTMKexYpiKJexXQZ2AjajXx7zc8y79k7f5/A1e8/UGL9BWhWScNlaKBEHRpfS3z9jYNNFqvxvkM1zeYWZmYoadVoLGGlUgHbfHg20MayvAEwHRE445t61VsepKr27Z2sUtYJRdJewZPV73iW58zyd5n1iqDR8mzFUeCYvnZ89ngHK8/k9wxOtb0YeQnFzPv3P3CPJihZPGM7xzaGBWaWow+ZOyfcOP9RIDP42CxuSQs+4Qc0sIY/dlIajfkUOHUaKk4a7sIy+mwTcEQ/WUyqu6OBSD9KR48MfAZn2ec0P+bcjHhntPcEU50rZLPt6JOFdcKq/3PWaQNJ523oIubvFxes3VPkBsZFG9B8iXlf82W/1v+ry0DDwRab/pQsXAUUj7r6dbX9udm1Y1R5BeiWgb9hlllOmblw6arOGKhyaLqYwTUZOByDjSiTz/N1dgB0ysB0o77nJr6Nk0Y3NgGdQ6h1gX3hzw8RaCKW53NSuAIYrPoOOa4vhhG3+OG2DutpDrv8h75vP+8EDqfsvn5nsI4MwBkxPMwet0oFP7v1A34k+uksH+ShgmD9yWtJe+82kwm4x74d+RlXXB66eWhKwQ1rPOuxpJfPc3GqPVO4T+kReUSFrUCA6yt5AESRuC3QK5kXW5YL04u9bXv6Ytqsz+1IHbuEg8gV7kbOXdMv9gM2P2DVWBB/x3HkUtVDdmNpOoSFGG7nnZvqMM7wFdzd/+vah8rf7lt+5xeV6bYKFcN/oKJjpk+LgybFwj8v37SfuXGg9S9Hj4rhAXbmamuZOEv/sPrvka6042O1YngwhOgecskjEcGZOE2kRIZXcDj+IXoEvVdwOwL5TlV6BQfwbZiLKV7BfeghMuOoV/AjZBNp8a9XcASuPkj1wSSv4Cj+7yaS/5s4/D/hDOy3ymbkOQAAAABJRU5ErkJggg==" alt="">
                 <p class="content-header-name">About Our Bot</p>
@@ -63,6 +66,7 @@
 
                     <ul class="tabs__caption about-left-list">
                         <li class="about-left-item">
+                            <img src="images/phone.png" alt="">
                             <div>
                                 <h4 class="about-left-item-name">Lorem ipsum dolor sit </h4>
                                 <p class="about-left-item-text">
@@ -71,6 +75,7 @@
                             </div>
                         </li>
                         <li class="about-left-item active">
+                            <img src="images/phone.png" alt="">
                             <div>
                                 <h4 class="about-left-item-name">Lorem ipsum dolor sit </h4>
                                 <p class="about-left-item-text">
@@ -79,6 +84,7 @@
                             </div>
                         </li>
                         <li class="about-left-item">
+                            <img src="images/phone.png" alt="">
                             <div>
                                 <h4 class="about-left-item-name">Lorem ipsum dolor sit </h4>
                                 <p class="about-left-item-text">
@@ -123,39 +129,40 @@
         </div>
     </div>
 
-    <div class="culc">
+    <div class="calc">
         <div class="container">
-            <div class="culc-list clearfix">
-                <div class="culc-item">
-                    <p class="culc-top">
+            <div class="calc-list clearfix">
+                <div class="calc-item">
+                    <p class="calc-top">
                         <span class="count">13856</span>+
                     </p>
 
-                    <p class="culc-text">Lorem ipsum dolor sit amet</p>
+                    <p class="calc-text">Lorem ipsum dolor sit amet</p>
                 </div>
-                <div class="culc-item">
-                    <p class="culc-top">
+                <div class="calc-item">
+                    <p class="calc-top">
                         <span class="count">336</span>+
                     </p>
-                    <p class="culc-text">Lorem ipsum dolor sit amet</p>
+                    <p class="calc-text">Lorem ipsum dolor sit amet</p>
                 </div>
-                <div class="culc-item">
-                    <p class="culc-top">
+                <div class="calc-item">
+                    <p class="calc-top">
                         <span class="count">1875</span>+
                     </p>
-                    <p class="culc-text">Lorem ipsum dolor sit amet</p>
+                    <p class="calc-text">Lorem ipsum dolor sit amet</p>
                 </div>
-                <div class="culc-item">
-                    <p class="culc-top">
+                <div class="calc-item">
+                    <p class="calc-top">
                         <span class="count">875</span>+
                     </p>
-                    <p class="culc-text">Lorem ipsum dolor sit amet</p>
+                    <p class="calc-text">Lorem ipsum dolor sit amet</p>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="works">
+        <h2>How It Works</h2>
         <div class="container">
             <div class="content-header">
                 <img  class="content-header-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACplBMVEUAhP3///8AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP0AhP3///8prvQHAAAA4HRSTlMAAEz2ahLPg4SCrTpBI3stPgpkVz8upfIyB7BDKVnKjV/fu2ABSKv79HZx7+Y2ZZzD3U3C55CXGwjZMWz6STTWjw7rzSs1DO5dIGGFm56Kaen5cn2Oa/PLU0LAoUasn4AcQNDVUlwTmH4Cs9fUzEXIA+NUgV5/Jh1o8JUvFYjs4AaHSyVKqadufNz8ybrhRBoWEG/RPTA5kyc7sYyjvE6dx2ag2sSRtOULbQ2qJDd3dbl5iVG/9b2SrlYiBXSyqJrYvk/owZa3/SH+pAkeiywX6sbktSi27SoPOPEfeqLTcKJCWVgAAAABYktHRAH/Ai3eAAAACXBIWXMAAAsSAAALEgHS3X78AAAD30lEQVRIx42W+V+NWRzHv8fViG5DkRZLjCjkonDLXFKNxjaWFBVuypIrEkJjK0wzVBRjRBnKmqzTIGTGNHbZ993nT3HOeR7Pfe598Or8cL7n+Z7367y+2/meh8g4WpkgRmv5wVzGZ2gPfNPG07NtO3i1CDfDW0p82yK8PToI4QPfr+EdO0nh19kfAWIRCAR1kXjXbgY8sDsQTNSjJ/BdrxCp6t0nFGF9GesH9Pd2w8MxwIKBgzC4l96uiEgMGYphfiZY9XhUNIYTfQ/bCHdHRsZgFGOxcSqvKOPxg9wLMTrORgss4cc4Dw0fg7F6wjpu/ISfJk7q6pIm9NFwsxIzZYybzDNqmyKmRCc+AFOdxiQhWYV7T8P0FGWZmjZDw2dilj4ydoyUMh3Rs4kyJmTO6TxXfM+zSyoKMS6BTPOfL0QWFpBjIbcje5ENWBxAOVgiqNzMpXp8GWRKlyOPWgMrVoqPVfk/YzWtQbbA1mKdDl9fIOYMfnZb2As1rzegHW0cJrkgOPFNkN7ZCigZifqQ/oIZamRmw6LhRRBzD8x34FfXJP2GHJa+WcZ9i4LHms3FJWLLtIhK4Z7Urf6sRNqRhZxtZYw2invWkW+UYxthhTveBds9EMHxlYLbQfh9Z6c/xIYvaBfKDTWDCiaKjLHd5j2VIPRT9VWgvaHGEoucxtb/qfq7j+NtVP1+G2XHGPFRYNUFKl7DcU9Vf2AKHcw04klgh7bq8E+BPgyqNBnxIzZ2NFLFUzi+sLZW5vEYeFbqDHjocQaZWEeCD3fvGI9P/wyuP4HRpK97ZfhhLMM8Tpcd5eBqopOJiSiVIUuj6DB3vBqsCoEcX45Tp0coRXCmWMx/IaQM9a7030hhOCtsOReu1YwXdsrjz1MDXHqBNyLZVJRzrk5/+YrjxVzDm+4FnmhtXMQWuoRgwTWg0Ylfxgkh/vmX6Ar+2+eQyj1NaOKdUl6PXBzXX77sOYFKwf5PXleBa1nXbwA3L9It+As/WZHJ5a4mqVe7EnaitcHhxbfj7rQn2ozoZkE1o7se34GJyuncfhTdVZaOKuCe0jgcFjQ48fto0Nx7YOfpeFjy6DEXT55qbcmCPA23IEofvoj6Zz0Lzh/OkxWhNb1SDU94/rBWyEJjhRHLlfRZvHDafglxsUQzMd3bnX55B/kca4JZHxkrwupeIf419q7Rw2/uAYOQ31it0trrYeVv6QWi8YCpIkCtgLe8F7/zYRXc6VT3p6z5inwXHcn8kXoqVo3n8D59u3B1zP5NX3koU2EWwgdv9ZH5It4Bb6TE6RbhVgRZamp869GqRTh9kH8QqCAj/hG0Z3xiRpPluwAAAABJRU5ErkJggg==" alt="">
@@ -210,9 +217,9 @@
 
     <div class="testimonials">
         <div class="container">
+            <h3 class="slide-header">testimonials</h3>
             <div class="slider">
                 <div class="slide">
-                    <h3 class="slide-header">testimonials</h3>
                     <p class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
                     <img src="images/slider-img.png" alt="" class="slide-img">
                     <p class="slide-name">Андрій Іванов</p>
@@ -221,7 +228,6 @@
                     </p>
                 </div>
                 <div class="slide">
-                    <h3 class="slide-header">testimonials</h3>
                     <p class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
                     <img src="images/slider-img.png" alt="" class="slide-img">
                     <p class="slide-name">Андрій Іванов</p>
@@ -230,7 +236,6 @@
                     </p>
                 </div>
                 <div class="slide">
-                    <h3 class="slide-header">testimonials</h3>
                     <p class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
                     <img src="images/slider-img.png" alt="" class="slide-img">
                     <p class="slide-name">Андрій Іванов</p>
@@ -243,6 +248,7 @@
     </div>
 
     <div class="faq">
+        <h2>FAQ</h2>
         <div class="container">
             <div class="content-header">
                 <img  class="content-header-img" src="data:image/png;base64,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" alt="">
@@ -327,24 +333,26 @@
     <div class="questions">
         <div class="form">
             <h4 class="form-header">Still have questions?</h4>
-            <div class="form-list clearfix">
+            <form class="form-list clearfix">
                 <div class="form-item">
-                    <form class="form-item-name" action="">
+                    <div class="form-item-name">
                         <input type="text" class="form-name" placeholder="Your name">
-                    </form>
+                    </div>
                 </div>
                 <div class="form-item">
-                    <form class="form-item-email" action="">
+                    <div class="form-item-email">
                         <input type="text" class="form-email" placeholder="Your email">
-                    </form>
+                    </div>
                 </div>
-                <form class="form-message" action="">
-                    <textarea class="form-message-text" name="" id="" cols="30" rows="10">Your message</textarea>
-                </form>
-            </div>
+                <div class="form-message">
+                    <textarea class="form-message-text" placeholder="Your message" name="" id=""></textarea>
+                </div>
+                <input type="submit" class="form-send" value="Send a message">
+            </form>
+
         </div>
     </div>
-
+    <a href="#" class="scrollToTop"></a>
 </body>
 </html>
 

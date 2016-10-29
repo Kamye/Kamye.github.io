@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    $(function(){
+        $('#menu').slicknav();
+    });
+
     $(function() {
 
         $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
@@ -22,7 +26,10 @@ $(document).ready(function () {
         });
     });
 
-    $('.slider').slick();
+    $('.slider').slick({
+        arrows: false,
+        dots: true
+    });
 
     $(function($) {
         var allAccordions = $('.accordion div.data');
@@ -42,6 +49,25 @@ $(document).ready(function () {
                 return false;
             }
         });
+    });
+
+    $(document).ready(function(){
+
+        //Check to see if the window is top if not then display button
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollToTop').fadeIn();
+            } else {
+                $('.scrollToTop').fadeOut();
+            }
+        });
+
+        //Click event to scroll to top
+        $('.scrollToTop').click(function(){
+            $('html, body').animate({scrollTop : 0},800);
+            return false;
+        });
+
     });
 
 });
