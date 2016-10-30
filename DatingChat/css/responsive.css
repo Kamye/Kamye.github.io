@@ -1,0 +1,359 @@
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+    .container,
+    .form
+    {
+        width: 970px;
+    }
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    .container,
+    .form
+    {
+        width: 100%;
+    }
+    .left-hand,
+    .right-hand,
+    .tab-phone
+    {
+        display: none !important;
+    }
+    .about-left-item{
+        padding: 33px 50px 29px 120px;
+        width: 100%;
+    }
+    .works-content,
+    .slider
+    {
+        width: 100%;
+    }
+    .facebook {
+        padding: 70px 0 70px 0;
+    }
+    .form{
+        position: static;
+    }
+    .questions{
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .about .content-header-img {
+        margin-top: 75px;
+    }
+    .about {
+        padding-bottom: 75px;
+    }
+    .content-header-img {
+        margin-top: 75px;
+    }
+    .works-content {
+        margin: 100px auto 0;
+    }
+    .works {
+        padding-bottom: 100px;
+    }
+    .faq-item {
+        margin-top: 70px;
+        padding-right: 0;
+    }
+    .faq-tabs-content {
+        padding: 35px 30px 20px 27px;
+    }
+    .faq {
+        padding-bottom: 70px;
+    }
+    .form-item {
+        width: 100%;
+        float: none;
+    }
+    .form-item-name {
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+    .faq-tabs {
+        margin-left: 0;
+    }
+    header {
+        padding-bottom: 250px;
+    }
+    .header-content {
+        margin-top: 56px;
+    }
+    .header-logo {
+        text-align: center;
+        float: none;
+    }
+    .container,
+    .form
+    {
+        width: 100%;
+    }
+    .left-hand,
+    .right-hand,
+    .tab-phone,
+    h2
+    {
+        display: none !important;
+    }
+    .about-left-item{
+        padding: 33px 50px 29px 120px;
+        width: 100%;
+    }
+    .works-content,
+    .slider,
+    .calc-list
+    {
+        width: 100%;
+    }
+    .facebook {
+        padding: 70px 0 70px 0;
+    }
+    .form{
+        position: static;
+    }
+    .questions{
+        padding-bottom: 40px;
+    }
+    .about-left-item {
+        padding: 20px;
+        width: 100%;
+    }
+    .about-left-list {
+        float: none;
+        width: 100%;
+    }
+    .about-right {
+        float: none;
+        width: 100%;
+    }
+    .about-right-content {
+        margin: 20px;
+    }
+    .calc-item {
+        width: 50%;
+        padding: 15px 0;
+    }
+    .calc{
+        height: auto;
+    }
+    .works-content-right-text .works-content-name {
+        margin-left: 0;
+    }
+    .works-content-name {
+        width: 100%;
+    }
+    .works-content-right-text,
+    .works-content-left-text
+    {
+        float: none;
+        width: 100%;
+    }
+    .works-content-right-img,
+    .works-content-left-img
+    {
+        float: none;
+        margin: 0;
+    }
+    .works-content-right,
+    .works-content-left
+    {
+        float: none;
+        text-align: center;
+    }
+    .faq-item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    header {
+        padding-bottom: 250px;
+    }
+    .header-content {
+        margin-top: 56px;
+    }
+    .header-logo {
+        text-align: center;
+        float: none;
+    }
+    .container,
+    .form,
+    .facebook-text,
+    .header-content-scan,
+    .header-content-boat
+    {
+        width: 100%;
+    }
+    .left-hand,
+    .right-hand,
+    .tab-phone,
+    h2
+    {
+        display: none !important;
+    }
+    .about-left-item{
+        padding: 33px 50px 29px 120px;
+        width: 100%;
+    }
+    .works-content,
+    .slider,
+    .calc-list
+    {
+        width: 100%;
+    }
+    .facebook {
+        padding: 70px 0 70px 0;
+    }
+    .form{
+        padding: 15px 98px;
+        position: static;
+    }
+    .questions{
+        padding-bottom: 40px;
+    }
+    .about-left-item {
+        padding: 20px;
+        width: 100%;
+    }
+    .about-left-list {
+        float: none;
+        width: 100%;
+    }
+    .about-right {
+        float: none;
+        width: 100%;
+    }
+    .about-right-content {
+        margin: 20px;
+    }
+    .calc-item {
+        width: 50%;
+        padding: 15px 0;
+    }
+    .calc{
+        height: auto;
+    }
+    .works-content-right-text .works-content-name {
+        margin-left: 0;
+    }
+    .works-content-name {
+        width: 100%;
+    }
+    .works-content-right-text,
+    .works-content-left-text
+    {
+        float: none;
+        width: 100%;
+    }
+    .works-content-right-img,
+    .works-content-left-img
+    {
+        float: none;
+        margin: 0;
+    }
+    .works-content-right,
+    .works-content-left
+    {
+        float: none;
+        text-align: center;
+    }
+    .faq-item {
+        width: 100%;
+    }
+    .form-item {
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+    }
+    .form-item-name {
+        padding-right: 0;
+    }
+    .form-list {
+        margin-top: 45px;
+    }
+    .calc-item {
+        width: 100%;
+    }
+    .accordion-item.open .type,
+    .accordion-item .type
+    {
+        margin-top: -15px;
+    }
+    .form {
+        padding: 15px;
+    }
+    .scrollToTop {
+        bottom: 20px;
+    }
+    .about .content-header-img {
+        margin-top: 45px;
+    }
+    .about {
+        padding-bottom: 45px;
+    }
+    .content-header-img {
+        margin-top: 45px;
+    }
+    .works-content {
+        margin: 60px auto 0;
+    }
+    .works-content-left {
+        margin: 110px 0 70px;
+    }
+    .works {
+        padding-bottom: 70px;
+    }
+    .slide-name {
+        margin-bottom: 30px;
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: -39px;
+    }
+    .testimonials {
+        padding: 35px 0;
+    }
+    .faq-item {
+        margin-top: 45px;
+    }
+    .facebook {
+        padding: 40px 0;
+    }
+    .form-send {
+        margin-top: 35px;
+    }
+    .faq {
+        padding-bottom: 50px;
+    }
+    .faq-tabs-content {
+        padding: 20px;
+    }
+    .faq-tabs-content {
+        padding: 1px;
+    }
+    .faq-tabs-content p {
+        margin-bottom: 10px;
+    }
+    .faq-tabs-content p {
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+    .faq-tabs {
+        margin-left: 0;
+    }
+    .accordion-item.open .type, .accordion-item .type {
+        margin: -15px -24px;
+    }
+    .faq-item {
+        padding-right: 0;
+    }
+    .about-content {
+        margin-top: 40px;
+    }
+    .about-right-name {
+        margin-bottom: 10px;
+    }
+}
