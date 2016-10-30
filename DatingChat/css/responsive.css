@@ -261,6 +261,9 @@
         border: none;
         padding: 8px 0;
     }
+    .form{
+        padding: 65px 30px;
+    }
 }
 
 @media screen and (max-width: 480px) and (min-width: 320px) {
@@ -489,5 +492,8 @@
     .header-nav-item a:hover{
         border: none;
         padding: 8px 0;
+    }
+    .form{
+        padding: 65px 30px;
     }
 }
