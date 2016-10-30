@@ -103,6 +103,9 @@
         text-align: center;
         float: none;
     }
+    .questions{
+        padding-bottom: 60px;
+    }
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
@@ -263,6 +266,9 @@
     }
     .form{
         padding: 65px 30px;
+    }
+    .questions{
+        padding-bottom: 40px;
     }
 }
 
@@ -495,5 +501,8 @@
     }
     .form{
         padding: 65px 30px;
+    }
+    .questions{
+        padding-bottom: 30px;
     }
 }
