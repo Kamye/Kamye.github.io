@@ -58,7 +58,6 @@ h2{
 /*----Header-Style----*/
 
 header{
-    background: url("../images/hand-header.png") no-repeat center calc(100% - 101px);
     padding-bottom: 267px;
     position: relative;
     z-index: 2;
@@ -97,6 +96,73 @@ header{
     -moz-animation: animatedBackground 50s linear infinite;
     -webkit-animation: animatedBackground 50s linear infinite;
 }
+
+/*------HAND-STYLE------*/
+
+.relative-block-r{
+    position: relative;
+}
+
+.right-hand{
+    position: absolute;
+    top: 165px;
+    left: 26px;
+}
+
+.finger,
+.hand-r,
+.screen-r{
+    position: absolute;
+    display: block;
+}
+.hand-r{
+    z-index: 1;
+    width: 444px;
+    height: 658px;
+}
+.screen-r{
+    width: 172px;
+    height: 306px;
+    z-index: 2;
+    top: 45px;
+    left: 51px;
+}
+.finger{
+    height: 188px;
+    width: 78px;
+    z-index: 3;
+    top: 206px;
+}
+
+.relative-block-l{
+    position: relative;
+}
+
+.left-hand{
+    position: absolute;
+    top: 164px;
+    right: 444px;
+}
+
+.hand-l,
+.screen-l{
+    position: absolute;
+    display: block;
+}
+.hand-l{
+    z-index: 1;
+    width: 431px;
+    height: 653px;
+}
+.screen-l{
+    width: 169px;
+    height: 301px;
+    z-index: 2;
+    top: 52px;
+    left: 188px;
+}
+
+/*------END-HAND-STYLE------*/
 
 .header-top{
     width: 100%;
@@ -270,13 +336,34 @@ header{
 
 }
 
-.about-left-item img{
+.tab-phone{
+    position: relative;
+}
+.phone,
+.tab-screen{
+    position: absolute;
+    display: block;
+}
+.phone{
+    z-index: 1;
+    /* width: 431px;
+     height: 653px;*/
+}
+.tab-screen{
+    width: 127px;
+    height: 227px;
+    z-index: 2;
+    top: 39px;
+    left: 13px;
+}
+
+.about-left-item .tab-phone{
     left: -12px;
     position: absolute;
     opacity: 0;
 }
 
-.about-left-item.active img{
+.about-left-item.active .tab-phone{
     display: block;
     left: 38px;
     top: -72px;
@@ -427,7 +514,7 @@ header{
 
 .works-content{
     width: 945px;
-    margin: 213px auto 0;
+    margin: 177px auto 0;
 }
 
 .works-content-right{
