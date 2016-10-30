@@ -24,6 +24,9 @@ body{
 }
 
 h2{
+    width: 90%;
+    left: 5%;
+    text-align: center;
     color: rgb(237, 237, 237);
     font-family: 'Roboto', sans-serif;
     font-size: 180px;
@@ -299,7 +302,6 @@ header{
 
 .about h2{
     top: 70px;
-    left: calc(50% - 572px);
 }
 
 .logo{
@@ -510,7 +512,6 @@ header{
 
 .works h2{
     top: 120px;
-    left: calc(50% - 535px);
 }
 
 .works-content{
@@ -634,6 +635,7 @@ header{
 }
 
 .slide-content{
+    padding: 0 20px;
     opacity: 0.8;
     color: white;
     font-size: 16px;
@@ -757,7 +759,6 @@ header{
 
 .faq h2{
     top: 131px;
-    left: calc(50% - 162px);
 }
 
 .faq-item{
@@ -974,7 +975,6 @@ div.data {
     text-align: center;
     margin: -188px auto 0;
     width: 975px;
-    height: 538px;
     background-color: white;
     border-radius: 2px;
     box-shadow: 0 13px 30px rgba(33, 33, 33, 0.26);

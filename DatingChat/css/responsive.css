@@ -10,9 +10,18 @@
     .questions{
         padding-bottom: 100px;
     }
+    .header-content-scan{
+        width: 355px;
+    }
+    .header-content-boat{
+        width: 407px;
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width: 769px) {
+    h2{
+        font-size: 130px;
+    }
     .form{
         margin-top: 0;
     }
@@ -27,7 +36,8 @@
     .works-content-right-img {
         box-shadow: 0 13px 30px rgba(68, 68, 68, 0.25);
         float: right;
-        margin-left: 213px;
+        margin-left: 193px;
+        margin-right: 20px;
         width: 207px;
     }
     .works-content-right-text .works-content-name {
@@ -38,7 +48,8 @@
 
     .works-content-left-img {
         box-shadow: 0 13px 30px rgba(68, 68, 68, 0.25);
-        margin-right: 213px;
+        margin-right: 193px;
+        margin-left: 20px;
         width: 207px;
     }
     .works-content-left-text {
@@ -408,5 +419,8 @@
     .works-content-text
     {
         padding: 0 5px;
+    }
+    .form-message-text{
+        margin-top: 0;
     }
 }
