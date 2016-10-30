@@ -467,4 +467,27 @@
         padding: 0 10px;
         box-sizing: border-box;
     }
+    .header-nav{
+        display: none;
+    }
+    .slicknav_menu {
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+    .header-nav-item {
+        float: none;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-nav-item a{
+        padding: 8px 0;
+    }
+
+    .header-nav-item a:hover{
+        border: none;
+        padding: 8px 0;
+    }
 }
