@@ -4,14 +4,53 @@
     {
         width: 970px;
     }
-
+    .about-left-item {
+        width: 100%;
+    }
+    .questions{
+        padding-bottom: 100px;
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width: 769px) {
+    .form{
+        margin-top: 0;
+    }
     .container,
     .form
     {
         width: 100%;
+    }
+    .calc-list {
+        width: 100%;
+    }
+    .works-content-right-img {
+        box-shadow: 0 13px 30px rgba(68, 68, 68, 0.25);
+        float: right;
+        margin-left: 213px;
+        width: 207px;
+    }
+    .works-content-right-text .works-content-name {
+        margin-left: 0;
+    }
+
+
+
+    .works-content-left-img {
+        box-shadow: 0 13px 30px rgba(68, 68, 68, 0.25);
+        margin-right: 213px;
+        width: 207px;
+    }
+    .works-content-left-text {
+        float: left;
+        margin-top: 70px;
+        width: calc(100% - 420px);
+    }
+
+    .works-content-right-text {
+        float: right;
+        margin-top: 70px;
+        width: calc(100% - 420px);
     }
     .left-hand,
     .right-hand,
@@ -40,6 +79,12 @@
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
+    .form{
+        margin-top: 0;
+    }
+    .header-content-boat{
+        width: 100%;
+    }
     .about .content-header-img {
         margin-top: 75px;
     }
@@ -169,6 +214,9 @@
 }
 
 @media screen and (max-width: 480px) and (min-width: 320px) {
+    .form{
+        margin-top: 0;
+    }
     header {
         padding-bottom: 250px;
     }
@@ -355,5 +403,10 @@
     }
     .about-right-name {
         margin-bottom: 10px;
+    }
+    .slide-content,
+    .works-content-text
+    {
+        padding: 0 5px;
     }
 }

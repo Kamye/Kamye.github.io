@@ -256,6 +256,7 @@ header{
 }
 
 .header-content-cta:hover{
+    transition: 500ms;
     background-color: #d0d0d0;
 }
 
@@ -931,6 +932,7 @@ div.data {
 }
 
 .facebook-link:hover{
+    transition: 500ms;
     background-color: rgb(1, 88, 168);
 }
 
@@ -938,6 +940,10 @@ div.data {
     position: absolute;
     top: 18px;
     left: 52px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEX///////////////////////////////////////////////////////////////9Or7hAAAAAD3RSTlMAiO7MRJkzqiLdd2ZVuxFFiZKLAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAFJJREFUCNdjYNT/DwSfHRji/4PBNwawQGn8VwYQrcHAD2EINM+HMBbs/w9lnIcwFjAw9MMY/mCG5oaT+uiKURj3IYw/DI8hDAEGhhQXl4YnHgwAExFiakf2EdoAAAAASUVORK5CYII=");
 }
 
 .facebook-link-text{
@@ -960,13 +966,10 @@ div.data {
 
 .form{
     box-sizing: border-box;
-    position: absolute;
-    left: calc(50% - 570px);
-    top: -188px;
     padding: 65px 98px;
     text-align: center;
-    margin: 0 auto;
-    width: 1140px;
+    margin: -188px auto 0;
+    width: 975px;
     height: 538px;
     background-color: white;
     border-radius: 2px;
@@ -1120,6 +1123,7 @@ div.data {
 
 .form-send:hover{
     background-color: rgb(1, 88, 168);
+    transition: 500ms;
 }
 
 /*----END-Form-Style----*/
@@ -1138,6 +1142,7 @@ div.data {
     background: url('../images/scrol-pas.png') no-repeat center center;
 }
 .scrollToTop:hover{
+    transition: 500ms;
     background: url('../images/scroll-act.png') no-repeat center center;
     text-decoration:none;
 }
