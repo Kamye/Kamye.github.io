@@ -19,6 +19,7 @@
 }
 
 @media screen and (max-width: 992px) and (min-width: 769px) {
+
     h2{
         font-size: 130px;
     }
@@ -86,6 +87,21 @@
     }
     .questions{
         padding-bottom: 40px;
+    }
+    .header-content {
+        margin-top: 83px;
+    }
+    .header-nav-list {
+        display: inline-block;
+        overflow: hidden;
+    }
+    .header-logo {
+        text-align: center;
+        float: none;
+    }
+    .header-nav {
+        text-align: center;
+        float: none;
     }
 }
 
@@ -221,6 +237,29 @@
     }
     .faq-item {
         width: 100%;
+    }
+    .header-nav{
+        display: none;
+    }
+    .slicknav_menu {
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+    .header-nav-item {
+        float: none;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-nav-item a{
+        padding: 8px 0;
+    }
+
+    .header-nav-item a:hover{
+        border: none;
+        padding: 8px 0;
     }
 }
 
@@ -418,9 +457,14 @@
     .slide-content,
     .works-content-text
     {
+        box-sizing: border-box;
         padding: 0 5px;
     }
     .form-message-text{
         margin-top: 0;
+    }
+    .facebook-text{
+        padding: 0 10px;
+        box-sizing: border-box;
     }
 }
