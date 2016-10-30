@@ -529,17 +529,16 @@ header{
     width: 490px;
 }
 
-.works-content-right-text .works-content-name{
-    margin-left: 235px;
-}
 
 .works-content-right-img{
     box-shadow: 0 13px 30px rgba(68, 68, 68, 0.25);
     float: right;
     margin-left: 213px;
+    width: 207px;
 }
 
 .works-content-num{
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     color: rgb(255, 229, 119);
     font-size: 100px;
@@ -548,7 +547,7 @@ header{
 }
 
 .works-content-name{
-    width: 255px;
+    width: 100%;
     margin-top: 15px;
     margin-bottom: 16px;
     color: rgb(69, 69, 69);
@@ -559,6 +558,7 @@ header{
 }
 
 .works-content-text{
+    width: 100%;
     color: rgb(117, 117, 117);
     font-size: 16px;
     font-weight: 400;
@@ -572,6 +572,7 @@ header{
 }
 
 .works-content-left-img{
+    width: 207px;
     box-shadow: 0 13px 30px rgba(68, 68, 68, 0.25);
     float: left;
     margin-right: 210px;
@@ -579,7 +580,7 @@ header{
 }
 
 .works-content-left-text{
-    width: 350px;
+    width: calc(100% - 417px);
     float: left;
     margin-top: 60px;
 }
