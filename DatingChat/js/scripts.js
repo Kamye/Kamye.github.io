@@ -14,18 +14,6 @@ $(document).ready(function () {
 
     });
 
-    $('.count').each(function () {
-        $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: 4000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
-    });
-
     $('.slider').slick({
         arrows: false,
         dots: true
@@ -80,9 +68,36 @@ $(document).ready(function () {
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({scrollTop: top}, 1500);
     });
-    
 
+    $('.calc').viewportChecker();
 
+    (function(){
+        //Сохраняем ссылку на стандартный метод jQuery
+        var originalAddClassMethod = jQuery.fn.addClass;
+        //Переопределяем
+        $.fn.addClass = function(){
+            var result = originalAddClassMethod.apply(this, arguments);
+            //Инициализируем событие смены класса
+            $(this).trigger('cssClassChanged');
+            return result;
+        }
+    })();
 
+    $(function(){
+        $(".calc").bind('cssClassChanged', function(){
+            $('.count').each(function () {
+                $(this).prop('Counter',0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+            //Отработает, как только сменится класс
+        });
+    });
 
 });
