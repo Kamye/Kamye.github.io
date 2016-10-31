@@ -11,10 +11,14 @@
         padding-bottom: 100px;
     }
     .header-content-scan{
-        width: 355px;
+        width: 350px;
     }
     .header-content-boat{
         width: 407px;
+    }
+
+    h2{
+        font-size: 130px;
     }
 }
 
@@ -105,6 +109,9 @@
     }
     .questions{
         padding-bottom: 60px;
+    }
+    .about:before{
+        top: -218px;
     }
 }
 
@@ -269,6 +276,10 @@
     }
     .questions{
         padding-bottom: 40px;
+    }
+    .calc-top{
+        font-size: 42px;
+        margin-bottom: 4px;
     }
 }
 
@@ -504,5 +515,12 @@
     }
     .questions{
         padding-bottom: 30px;
+    }
+    .calc-top{
+        font-size: 42px;
+        margin-bottom: 4px;
+    }
+    .slide-img{
+        margin: 30px auto;
     }
 }

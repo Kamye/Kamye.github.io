@@ -449,6 +449,7 @@ header{
     text-align: center;
     background: url(../images/culc-bg.png) center -12px;
     box-shadow: 0 13px 30px rgba(33, 33, 33, 0.26);
+    background-size: cover;
 }
 
 .calc-list{
@@ -508,6 +509,7 @@ header{
     background: url("../images/works-bg.png") top center;
     text-align: center;
     padding-bottom: 240px;
+    background-size: cover;
 }
 
 .works h2{
@@ -596,6 +598,7 @@ header{
     background: url("../images/slider-bg.png");
     padding: 100px 0;
     box-shadow: 0 13px 30px rgba(33, 33, 33, 0.26);
+    background-size: cover;
 }
 
 .slider{
@@ -603,6 +606,7 @@ header{
     width: 945px;
     margin: 0 auto;
     text-align: center;
+    outline: none;
 
 }
 
@@ -907,6 +911,7 @@ div.data {
     font-family: 'Roboto', sans-serif;
     background: url("../images/facebook-bg.png");
     text-align: center;
+    background-size: cover;
 }
 
 .facebook-header{
@@ -978,7 +983,7 @@ div.data {
 
 .questions{
     position: relative;
-    padding-bottom: 555px;
+    padding-bottom: 200px;
 }
 
 .form{

@@ -67,7 +67,7 @@ $(document).ready(function () {
     });
 
 
-    $("#menu").on("click","a", function (event) {
+    $("#menu, .slicknav_nav").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
 
