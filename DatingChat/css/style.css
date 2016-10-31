@@ -805,7 +805,6 @@ header{
 
 .accordion-item.open .type {
     margin-top: -5px;
-    float: right;
     background: url('../images/active.png') center no-repeat;
     /* padding: 10px; */
 }
