@@ -1,0 +1,86 @@
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.header {
+  background: #76c7c0 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAJAgMAAAC6UW9rAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAAAAAD///+D3c/SAAAAAnRSTlMAGovxNEIAAAABYktHRAJmC3xkAAAACXBIWXMAAAsSAAALEgHS3X78AAAAGElEQVQI12MIYIAAOC3AwsjgQDwdCgYOALKXBr2t4N71AAAAAElFTkSuQmCC") repeat-x bottom;
+  padding-bottom: 6px; }
+
+.header-logo-link {
+  line-height: 74px;
+  display: block;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none; }
+  .header-logo-link:hover {
+    color: white;
+    text-decoration: none; }
+
+.header-logo-sub {
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: lowercase; }
+
+.header-nav {
+  padding-top: 22px; }
+
+.header-nav-item {
+  float: left;
+  position: relative;
+  border-bottom: 3px solid transparent;
+  border-radius: 5px; }
+  .header-nav-item:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #e8645a;
+    border-color: #e2534b; }
+    .header-nav-item:hover .header-nav-sub-wrapper {
+      display: block;
+      position: absolute; }
+
+.header-nav-sub-wrapper {
+  top: 45px;
+  display: none;
+  background: #e8645a;
+  border-radius: 5px;
+  position: relative; }
+  .header-nav-sub-wrapper:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    left: 12px;
+    width: 12px;
+    height: 6px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAGAgMAAACKgJcSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEXiU0viU0viU0v////3sGfkAAAAAnRSTlMAf7YpoZUAAAABYktHRAMRDEzyAAAACXBIWXMAAAsSAAALEgHS3X78AAAAIUlEQVQI12NgEGFgYMhkYGBc5cDAtmoCg9SqJQxZq1YCACzkBc40h6KvAAAAAElFTkSuQmCC"); }
+
+.header-nav-item_active {
+  background: #62a29e;
+  border-bottom: 3px solid #528b86;
+  text-decoration: none;
+  color: #fff; }
+  .header-nav-item_active:hover {
+    background: #62a29e;
+    border-color: #62a29e; }
+
+.header-nav-link {
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 30px;
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase;
+  border-radius: 5px; }
+  .header-nav-link:hover {
+    color: #fff;
+    text-decoration: none; }
+
+.header-search-ico {
+  color: #fff;
+  font-size: 16px;
+  text-align: right;
+  padding-top: 28px; }
+
+/*# sourceMappingURL=style.css.map */
