@@ -1,0 +1,174 @@
+/*
+    font-family: 'SansitaOne', sans-serif;
+
+*/
+
+
+
+
+body{
+    margin: 0;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #656566;
+    background: url("../images/bg.jpg") 0 0 repeat #262528;
+}
+
+/*----Header-style----*/
+
+.header{
+    background: url("../images/header.jpg") 0 0 repeat-x #1b1a1d;
+    padding-top: 30px;
+}
+
+.header-block{
+    background: url("../images/header-block.jpg") 0 0 repeat-x #1b1b1c;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+.header-block-pad{
+    padding: 53px 31px 46px 52px
+}
+
+.brand {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+}
+
+.brand-link {
+    text-transform: none;
+}
+
+.brand-bot{
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    color: #737373;
+    font-weight: normal;
+    margin: -1px 0 0 2px;
+    letter-spacing: 0;
+}
+
+.navbar-form{
+    background: url("../images/form-search.jpg") 0 0 repeat-x #1c1c1c;
+    border-bottom: 1px solid #515152;
+    border-radius: 3px;
+    margin: 19px 0 0 0;
+    float: right;
+    padding: 0;
+}
+
+.navbar-form-area{
+    background: none;
+    border: none;
+    box-shadow: none;
+    line-height: 18px;
+    width: 288px;
+    float: left;
+    margin: 0;
+    padding: 6px 0 5px 3px;
+    outline: none;
+}
+
+.navbar-form-link{
+    margin: 0;
+    display: inline-block;
+    width: 40px;
+    height: 33px;
+    background: url("../images/search.png") 0 0 no-repeat;
+    float: right;
+    &:hover{
+        background: url("../images/search.png") right 0 no-repeat;
+    }
+    &:active{
+        outline: 0;
+    }
+}
+
+.contacts{
+    float: right;
+    display: inline-block;
+    margin: 7px 62px 0 0;
+    padding: 6px 45px 10px 0;
+    color: #ffffff;
+    line-height: 22px;
+    background: url("../images/line-1.png") right 0 repeat-y;
+}
+
+.contacts-numb{
+    color: #747474;
+}
+
+.contacts-mail{
+    color: #747474;
+    text-decoration: none;
+    &:hover{
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+/*---NAVBAR----*/
+
+.navbar_{
+    margin: 0;
+}
+
+.navbar-inner_{
+    padding: 18px 0 19px 45px;
+    margin: 0;
+    background: url(../images/navbar.png) 0 0 repeat-x;
+    border: none;
+    min-height: inherit;
+}
+
+.btn-navbar {
+    display: none;
+    float: right;
+    padding: 7px 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #ededed;
+    background-image: linear-gradient(to bottom,#f2f2f2,#e5e5e5);
+    background-repeat: repeat-x;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1),0 1px 0 rgba(255,255,255,0.075);
+}
+
+.nav-collapse_ {
+    float: left;
+    padding-top: 8px;
+}
+
+/*---NAVBAR----*/
+
+
+/*----Header-style----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
